@@ -64,3 +64,16 @@ Contributing
   you fully understand -- bad advice is worse than no advice.  When it
   comes to something that you don't fully know or understand, please
   defer to the official help or official channels.
+
+Build and install ``libobs`` only for Windows (quick instructions)
+------------------------------------------------------------------
+
+::
+
+  git clone --recursive https://github.com/obsproject/obs-studio.git
+  cd obs-studio
+  mkdir build
+  cd build
+  cmake .. -DENABLE_UI=false -DENABLE_SCRIPTING=false -DBUILD_VST=false -DBUILD_BROWSER=OFF -DDepsPath="<PATH_TO_dependencies2019>\win64" -G"Visual Studio 16 2019" -A x64
+  cmake --build .
+  cmake --build . --target install
