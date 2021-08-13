@@ -68,8 +68,8 @@ Contributing
 Build and install ``libobs`` only for Windows (quick instructions)
 ------------------------------------------------------------------
 
+Download dependencies https://obsproject.com/downloads/dependencies2019.zip and unpack somewhere and then execute:
 ::
-
   git clone --recursive https://github.com/obsproject/obs-studio.git
   cd obs-studio
   mkdir build
